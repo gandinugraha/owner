@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrrobot.owner.activity.AddNewActivity">
+
+    <LinearLayout
+        android:id="@+id/userForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/salonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Salon Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/salonAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/salonName"
+            android:layout_alignStart="@+id/salonName"
+            android:layout_below="@+id/salonName"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="Salon Address"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/managerOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/salonAddress"
+            android:layout_alignLeft="@+id/salonAddress"
+            android:layout_alignRight="@+id/salonAddress"
+            android:layout_alignStart="@+id/salonAddress"
+            android:layout_below="@+id/salonAddress"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Manager Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/emailOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/managerOwner"
+            android:layout_alignStart="@+id/managerOwner"
+            android:layout_below="@+id/managerOwner"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/bPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailOwner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp"
+            android:gravity="center"
+            android:text="Selet Picture"
+            android:onClick="selecPic"/>
+
+    </LinearLayout>
+
+    <!-- ************************************************ -->
+
+    <LinearLayout
+        android:id="@+id/uploadFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="nama"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="email@abc.com"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="220dp"
+            android:layout_height="220dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:onClick="uploadSalon"
+            android:text="Upload salon" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
